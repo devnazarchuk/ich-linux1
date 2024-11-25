@@ -1,0 +1,16 @@
+    1  git clone https://github.com/devnazarchuk/ich-linux1.git
+    2  cd ich-linux1
+    3  git status
+    4  git checkout -b feature
+    5  echo "# Git linux project 1232142113535135" > README.md
+    6  echo ".envelope" >> .gitignore
+    7  git add README.md .gitignore
+    8  git commit -m "Added README.md and new options in .gitignore"
+    9  git push origin feature
+   10  git commit --amend -m "Added README.md and changed d .gitignore (ammend)"
+   11  git push origin feature
+   12  git push origin feature --force
+   13  git checkout main
+   14  git merge feature
+   15  git push origin main
+   16  history > history.txt
